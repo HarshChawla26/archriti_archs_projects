@@ -1,0 +1,63 @@
+.in-progress{
+    border:1px solid black;
+}
+@media (max-width:768px){
+    .exp-tabs{
+        width:80% !important;
+        padding-left: 29.5% !important;
+    }
+    .exp-tabs p{
+        margin-left: -20% !important;
+    }
+}
+.exp-belt{
+    display:flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: auto;
+    min-height:40vh;
+    background-color:rgb(133 36 1);/*rgba(5, 42, 97, 0.904)*/
+    color:rgb(232, 253, 255);
+    border-bottom: 1px solid #013d4d;
+}
+.exp-tabs{
+    min-width:100px;
+    width:30%;
+    height:80%;
+    margin: 0.2%;
+    padding-left: 13.5%;
+    padding-top: 0.6%;
+}
+.exp-tabs fa-icon{
+    top:0px;
+    font-size:50px;
+}
+.exp-tabs span{
+    font-size:60px;
+}
+
+.exp-tabs p{
+    margin-left: -8%;
+    margin-top: -5%;
+    font-size:1.7em;
+}
+#exp{
+    margin-left: -28%;
+    margin-top: -8%;    
+}
+#prj{
+    margin-top:-8%
+}
+#svis{
+    margin-left: -37%;
+    margin-top: -8%;
+}
+#exp span{
+    margin-left: 14%;
+}
+#exp-no,#prj-no,#svis-no{
+    font-size:3em;
+}

@@ -1,0 +1,59 @@
+.in-progress{
+    border:1px solid black;
+}
+
+@media only screen  and (max-width:768px) {
+    .modal-content{
+        width:350px !important;
+        margin-top: 30% !important;
+        margin-left: 10% !important;
+    }
+}
+
+.projects-window{
+    background-image:radial-gradient(at 60% -1% ,#cbe8f0  -1%,#74b5c5  -4%,#49aac2  5%,#1588a5 20%);
+    margin: auto;
+    min-height:500px;
+    height: auto;
+}
+.projects-area{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:85%;
+    margin-left: 7.5%;
+    height:80%;
+}
+
+
+/* .img-body{
+} */
+
+.imgDiv{
+    margin: 1%;
+}
+.modal-content img{
+    width:270px;
+    height:180px;
+    overflow: hidden;
+    object-fit:contain;
+}
+.modal-content button{
+    position:absolute;
+    height: 100%;
+    right:0px;
+    top:0px;
+}
+.modal-content{
+    margin-top: 10%;
+    margin-left: -9%;
+    background-color: rgb(100, 14, 14);
+    width: 1000px;
+    padding: 3%;
+    flex-direction: row;
+    flex-wrap: wrap !important;
+    justify-content: space-around;
+    z-index: 300000;
+}

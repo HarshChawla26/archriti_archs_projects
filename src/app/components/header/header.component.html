@@ -1,0 +1,60 @@
+<nav class="navigation-bar sticky-top">
+  <!-- this div contains the logo and title os the page -->
+  <div class="title-combo d-flex">
+    <div class="website-logo">
+      <img alt="" src="" />
+    </div>
+    <div class="website-name">
+      <p><a href="/" style="text-decoration: none;color:inherit;font-style:italic;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Archiriti Architects</a></p>
+    </div>
+  </div>
+  <!-- {/*  this is for search bar*/} -->
+  <!-- <div class="empty-for-now"></div> -->
+  <div class="tabs d-none d-md-flex">
+   <!-- {/* this is for notification bell -->
+    <a href="/"
+      ><div class="section rounded d-inline-block Home">
+        Home
+      </div></a
+    >
+    <a href="#about" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      ><div class="section rounded d-inline-block About">
+        About
+      </div></a
+    >
+    <a routerLink="/projects"
+      ><div class="section rounded d-inline-block Projects">
+        Projects
+      </div></a
+    >
+    <a routerLink="/contactus"
+      ><div class="section rounded d-inline-block Contacts">
+        Contact us
+      </div></a
+    >
+    <!-- <div class="section rounded d-inline-block"></div> -->
+  </div> 
+  <div class="tabs-menu-btn d-block d-md-none">
+    <a  role="button" (click)="togMenu()" id="toggle-menu"><i class="fas d-flex fa-bars"></i></a>
+  </div>
+</nav>
+<div class="tabs-menu"
+[ngClass]="{
+  'd-none' : showTabsMenu == false,
+ 'd-block' : showTabsMenu == true }">
+  <div class="tabs-list">
+    <ul TYPE="NONE" id="set">
+      <button type="button" (click)="togMenu()" class="btn-close btn-colour position-absolute mt-1 end-0 mr-5"  style="font-size:30px;" aria-label="Close"></button>
+      <br/>
+      <br/>
+      <li><a href="/">Home</a></li>
+      <hr/>
+      <li><a href="#about" >About</a></li>				
+      <hr/>
+      <li><a routerLink="/projects">Projects</a></li>
+      <hr/>
+      <li><a routerLink="/contactus">Contacts</a></li>
+      <hr/>
+    </ul>
+  </div>
+</div>

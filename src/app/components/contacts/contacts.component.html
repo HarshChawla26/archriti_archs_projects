@@ -1,0 +1,33 @@
+<div class="contacts  " [ngClass]="{
+    'background-img3' : rt.url == '/',
+    'background-img'  : rt.url == '/contactus',
+    'background-img2' : rt.url =='/projects' 
+
+}">
+    <p id="con-Head" class="com-head">Contacts</p>
+    <div class="d-flex wrapper ">
+        <div class="con-list width mt-2">
+            <p class="list-head com-head mx-2">Check us on</p>
+            <ul class="list-group mx-2">
+                <li class="list-group-item social-icons my-1 mx-2"><a href="https://www.facebook.com/archiritiarchitects" target="_blank" ><i id="fb" class="fab social fa-facebook"></i> Facebook</a></li>
+            </ul>
+        </div>
+        <div class="address width  mx-2 com-head mt-2">
+            <p class=" list-head add-head">Address</p>
+            <ul class="list-group  mx-2">
+                <li class="list-group-item w-100 h-auto  my-1 mx-2"><i id="fb" class="fa-solid social fa-location-dot"></i> <span style="font-size:0.8em;text-decoration: underline;"> #12 Gulati Market,Cabin no. 6 & 7 ,Near Axis Bank, Mahesh Nagar, Ambala Cantt.</span></li>
+                <li class="list-group-item  my-1 mx-2"><i id="fb" class="fa-solid social fa-phone"></i> +91-9416172811</li>
+                <li class="list-group-item  my-1 mx-2"><i id="fb" class="fa-solid social fa-inbox"> </i><span style="font-size:0.8em;">  jchawla73@gmail.com</span></li>
+            </ul>
+        </div>
+        <div class="address width  mx-2 com-head mt-2">
+            <p class=" list-head add-head">QuickLinks</p>
+            <ul class="list-group  mx-2">
+                <a href="/"><li class="list-group-item social-icons w-100 h-auto rounded my-1 mx-2">Home</li></a>
+                <a href="#about" data-bs-toggle="modal" data-bs-target="#exampleModal"><li class="list-group-item social-icons rounded my-1 mx-2">About</li></a>
+                <a href="/projects"><li class="list-group-item social-icons rounded my-1 mx-2">Projects</li></a>
+                <a href="/contactus"><li class="list-group-item social-icons rounded my-1 mx-2">Contact us</li></a>
+            </ul>
+        </div>
+    </div>
+</div>

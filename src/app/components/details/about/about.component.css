@@ -1,0 +1,48 @@
+
+.in-progress{
+    border:1px solid black;
+}
+.modal{
+    margin-left: -4%;
+    margin-top: 4%;
+    border-radius: 5% !important;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40vw;
+    height:70vh;
+    border-radius: inherit;
+    background-color: rgb(133 36 1);
+}
+.about-card{
+    /* margin-top: -7%; */
+    width:98%;
+    height:98%;
+    /* background-color:   /; */
+    /* border: 3px solid rgb(218, 105, 105); */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.writing{
+    box-shadow: inset 0px 3px 3px 3px rgba(0, 0, 0, 0.5);
+    width:98%;
+    text-align: justify;
+    height:98%;
+    background-color:rgb(232, 253, 255);
+    border-radius: inherit;
+}
+.fade{
+    transition: opacity .15s ease-in-out !important;
+}
+.writing p{
+    color:#017b99;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    /* width:90%; */
+}

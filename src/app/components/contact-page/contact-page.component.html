@@ -1,0 +1,54 @@
+<div id="contact-page" class="contact-page" >
+  <form [formGroup]="feedForm" (ngSubmit)="onformSubmit(feedForm.value)" >
+    <div class="form-group">
+      <label for="name">Your name<span> *</span></label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        formControlName = 'name'
+        placeholder=""
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="email">Your email<span> *</span></label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        formControlName = 'email'
+        aria-describedby="emailHelp"
+        placeholder=""
+        required
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
+    </div>
+    <div class="form-group">
+      <label for="msg">Your message<span> *</span></label>
+      <textarea
+        rows="4"
+        type="text"
+        class="form-control"
+        id="msg"
+        formControlName="msg"
+        placeholder="Any queries or review whatever you wish to write to us .."
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Submit
+    </button>
+  </form>
+  
+</div>
+<div class="response "
+[ngClass]="{
+  'd-none' : showRes == false,
+  'd-flex' : showRes == true
+}">
+   <span class="responsespan"> </span>
+</div>

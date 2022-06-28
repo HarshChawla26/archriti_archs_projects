@@ -1,0 +1,16 @@
+<div id="Home" class="Intro-box  ">
+    <div class="overlay">
+        <!-- qoute Line -->
+        <div style="color: rgb(232, 253, 255) " class='quote'><p [innerText]="dynquote"><p style="color: rgb(231, 123, 84)" [innerText]="dynAuthor"> </p></div>
+        
+        <!-- buttons that dynamically change -->
+        <a href="/" type="button" *ngIf="rter.url == '/projects'" class="mx-auto btn pro-btn btn-outline-light">Back To Home</a>
+        <a href="/projects" type="button" *ngIf="rter.url == '/' || rter.url == '/contactus'" class="mx-auto pro-btn btn btn-outline-light">Explore Our Projects</a>
+        
+        <!-- social button -->
+        <span class="d-none d-md-inline">Follow us on : </span><a href="https://www.facebook.com/archiritiarchitects" target="_blank" ><i id="fb" class="fab social fa-facebook"></i></a>
+        
+        <!-- button for scroll -->
+        <a href="#proj-win" *ngIf="rter.url == '/'" ><fa-icon id="scroll" [icon]="faChevronDown"></fa-icon></a>
+    </div>
+</div>
